@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /assets/video/
+
+Sitemap: https://afonsomatosdacruz.vercel.app/sitemap.xml

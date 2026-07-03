@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="thankyou.meta.title">Bericht verzonden — Afonso Matos da Cruz Portfolio</title>
+  <meta name="description" content="Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Afonso Matos da Cruz - Portfolio">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;900&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #thankyou-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .thankyou-icon {
+      width: 80px;
+      height: 80px;
+      border: 2px solid var(--crimson);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .thankyou-icon svg {
+      width: 40px;
+      height: 40px;
+      stroke: var(--crimson);
+      stroke-width: 2;
+      fill: none;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+    }
+    .thankyou-content {
+      max-width: 38rem;
+    }
+    .thankyou-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .thankyou-title {
+      font-family: var(--disp);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--white);
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+    .thankyou-title em {
+      font-style: italic;
+      color: var(--crimson);
+    }
+    .thankyou-text {
+      font-size: 0.9375rem;
+      color: var(--slate);
+      line-height: 1.72;
+      margin-bottom: 3rem;
+    }
+    .thankyou-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link" data-i18n="skip">Naar inhoud</a>
+
+<header id="nav" role="banner">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">AMC<sup>®</sup></a>
+    <nav class="nav-links" aria-label="Hoofdnavigatie">
+      <a href="index.html#werk" data-i18n="nav.work">Projecten</a>
+      <a href="index.html#over" data-i18n="nav.about">Over</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right"></div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="thankyou-page" aria-labelledby="thankyou-title">
+    <div class="thankyou-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="thankyou-content">
+      <span class="thankyou-label" data-i18n="thankyou.label">Bericht verzonden</span>
+      <h1 id="thankyou-title" class="thankyou-title" data-i18n="thankyou.title">Bedankt voor<br>je <em>bericht.</em></h1>
+      <p class="thankyou-text" data-i18n="thankyou.text">
+        Ik heb je bericht ontvangen en neem zo snel mogelijk contact met je op.
+        Meestal reageer ik binnen 24 tot 48 uur.
+      </p>
+      <nav class="thankyou-links" aria-label="Navigatie opties">
+        <a href="index.html" class="btn btn-light" data-i18n="thankyou.back">Terug naar portfolio</a>
+        <a href="index.html#werk" class="btn btn-ghost" data-i18n="thankyou.view">Projecten bekijken</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-base" style="width:var(--wrap);margin:0 auto;padding:2rem 0">
+    <span class="footer-copy crimson-text">© <span data-year></span> Afonso Matos da Cruz. Alle rechten voorbehouden.</span>
+    <nav class="footer-legal" aria-label="Juridische links">
+      <a href="privacy.html" data-i18n="footer.legal.privacy">Privacy</a>
+      <a href="disclaimer.html" data-i18n="footer.legal.disclaimer">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/translations.js" defer></script>
+<script>
+  document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
+  document.body.classList.add('is-ready');
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('is-solid', window.scrollY > 60), { passive: true });
+</script>
+</body>
+</html>

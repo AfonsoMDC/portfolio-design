@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Pagina niet gevonden · Afonso Matos da Cruz Portfolio</title>
+  <meta name="description" content="De pagina die je zoekt bestaat niet of is verplaatst.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Afonso Matos da Cruz - Portfolio">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;900&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .error-num {
+      font-family: var(--disp);
+      font-weight: 900;
+      font-size: clamp(8rem, 25vw, 22rem);
+      letter-spacing: -0.07em;
+      line-height: 0.85;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--crimson);
+      position: absolute;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .error-content {
+      position: relative;
+      z-index: 1;
+      max-width: 38rem;
+    }
+    .error-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 4rem;
+      display: block;
+    }
+    .error-title {
+      font-family: var(--disp);
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--white);
+      line-height: 1.05;
+      margin-bottom: 1.25rem;
+    }
+    .error-text {
+      font-size: 0.9375rem;
+      color: var(--slate);
+      line-height: 1.72;
+      margin-bottom: 2.5rem;
+    }
+    .error-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-links a {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white);
+      border: 1px solid var(--steel);
+      padding: 0.875rem 1.75rem;
+      transition: border-color 0.2s, color 0.2s;
+      text-decoration: none;
+    }
+    .error-links a:first-child { background: var(--crimson); border-color: var(--crimson); }
+    .error-links a:first-child:hover { background: transparent; color: var(--crimson); }
+    .error-links a:last-child:hover { border-color: rgba(245,245,243,0.4); }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Naar inhoud</a>
+
+<header id="nav" role="banner">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">AMC<sup>®</sup></a>
+    <nav class="nav-links" aria-label="Hoofdnavigatie">
+      <a href="index.html#werk">Werk</a>
+      <a href="index.html#over">Over</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-right"></div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="error-page" aria-labelledby="error-title">
+    <div class="error-num" aria-hidden="true">404</div>
+    <div class="error-content">
+      <span class="error-label">Fout 404</span>
+      <h1 id="error-title" class="error-title">Pagina niet<br>gevonden.</h1>
+      <p class="error-text">
+        De pagina die je zoekt bestaat niet, is verplaatst of heeft een andere URL gekregen.
+        Gebruik de navigatie hierboven of ga terug naar de homepage.
+      </p>
+      <nav class="error-links" aria-label="Navigatie opties">
+        <a href="index.html">← Terug naar home</a>
+        <a href="index.html#contact">Contact opnemen</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('is-solid', window.scrollY > 60), { passive: true });
+</script>
+</body>
+</html>
