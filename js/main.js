@@ -1,13 +1,14 @@
-/* Afonso Matos da Cruz — main.js */
+/* Afonso Matos da Cruz · main.js */
 'use strict';
 
-/* Year */
+/* Jaartal automatisch invullen */
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-/* ── READY (no loader) ──────────────────────────────────────────── */
+/* ── PAGINA KLAAR (geen loader nodig) ──────────────────────────────────────────── */
 document.body.classList.add('is-ready');
 
-/* ── LANGUAGE SWITCHER ──────────────────────────────────────────── */
+/* ── TAALWISSELAAR ──────────────────────────────────────────── */
+/* Taalknoppen voor NL/EN/FR/PT */
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const lang = btn.dataset.lang;
@@ -15,7 +16,8 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   });
 });
 
-/* ── SCROLL PROGRESS ────────────────────────────────────────────── */
+/* ── SCROLLVOORTGANGSBALK ────────────────────────────────────────────── */
+/* Voortgangsbalk bovenaan en navigatie verbergen bij scrollen */
 const progress = document.getElementById('progress');
 const nav = document.getElementById('nav');
 let lastScrollY = 0;
@@ -40,7 +42,7 @@ window.addEventListener('scroll', () => {
         }
       }
 
-      /* Active nav links */
+      /* Actieve navigatielinks bij scrollen */
       let current = '';
       document.querySelectorAll('section[id]').forEach(s => {
         if (scrollY >= s.offsetTop - 160) current = s.id;
@@ -56,7 +58,8 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* ── HAMBURGER ──────────────────────────────────────────────────── */
+/* ── HAMBURGER MENU ──────────────────────────────────────────────────── */
+/* Mobiel navigatiemenu openen en sluiten */
 const hbg  = document.getElementById('hbg');
 const menu = document.getElementById('mobile-menu');
 const closeMenu = () => {
@@ -73,7 +76,8 @@ hbg?.addEventListener('click', () => {
 });
 menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-/* ── SCROLL REVEALS ─────────────────────────────────────────────── */
+/* ── SCROLL REVEAL ANIMATIES ─────────────────────────────────────────────── */
+/* Elementen vervagen bij het in beeld scrollen (.fu = fade-up) */
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
@@ -85,6 +89,7 @@ const revealObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fu, .cr').forEach(el => revealObs.observe(el));
 
 /* ── INTERSTITIAL PARALLAX ──────────────────────────────────────── */
+/* Subtiel parallax-effect voor de interstitial afbeelding */
 const intEls = document.querySelectorAll('.interstitial');
 const intObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -104,7 +109,8 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-/* ── FOOTER REVEAL ──────────────────────────────────────────────── */
+/* ── FOOTER REVEAL ANIMATIE ──────────────────────────────────────────────── */
+/* Grote footer tekst verschijnt regel voor regel */
 const footObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
@@ -119,16 +125,16 @@ document.querySelectorAll('.footer-big').forEach(el => footObs.observe(el));
 
 /* Hero discipline cycle moved to updateHeroDisciplines() */
 
-/* ── DYNAMIC CONTENT BUILDERS (i18n-aware) ──────────────────────── */
+/* ── DYNAMISCHE INHOUD BOUWERS (i18n-bewust) ──────────────────────── */
 
-/* Helper: get translated array/object from translations */
+/* Helperfunctie: vertaalde waarde ophalen */
 function getTranslated(key, fallback) {
   if (typeof t !== 'function') return fallback;
   const val = t(key);
   return val !== key ? val : fallback;
 }
 
-/* ── PROJECTENLIJST — Dynamisch opgebouwd met vertalingen ───────────────────── */
+/* ── PROJECTENLIJST · Dynamisch opgebouwd met vertalingen ───────────────────── */
 function buildProjects() {
   const plist = document.getElementById('project-list');
   if (!plist) return;
@@ -199,7 +205,7 @@ function buildProjects() {
   });
 }
 
-/* ── ARCHIVE GRID — uniform with info overlay ───────────────────── */
+/* ── ARCHIEF GRID · uniform met info overlay ───────────────────── */
 function buildArchive() {
   const agrid = document.getElementById('archive-grid');
   if (!agrid) return;
@@ -209,7 +215,7 @@ function buildArchive() {
 
   agrid.innerHTML = '';
 
-  // EXACT 13 ITEMS (Index 0 t/m 12)
+  /* EXACT 13 ITEMS (Index 0 t/m 12) · Afbeeldingen voor elk archiefwerk */
   const ARCHIVE_IMGS = [
     'assets/algemeen/Viktor Gyökeres Poster Afonso.jpg',    // 0
     'assets/algemeen/Travis Scott Poster Afonso.jpg',      // 1
@@ -226,7 +232,7 @@ function buildArchive() {
     null                                                   // 12: The Circle Mockups (gebruikt PAGES)
   ];
 
-  // EXACT 13 ITEMS (Index 0 t/m 12)
+  /* EXACT 13 ITEMS (Index 0 t/m 12) · Pagina's voor meerbladige werken */
   const ARCHIVE_PAGES = [
     null, // 0
     null, // 1
@@ -334,7 +340,7 @@ function buildArchive() {
   });
 }
 
-/* ── BEELD & BEWEGING — Photo & Film ────────────────────────────── */
+/* ── BEELD & BEWEGING · Photo & Film ────────────────────────────── */
 const PHOTOS = [
   { src: 'assets/fotografie/20240720-IMG_2851.jpg',        alt: 'Waterfront dramatische lucht',          tall: true },
   { src: 'assets/fotografie/Richtingen en dualiteit Van Snick.jpg', alt: 'Grafisch architectuurdetail',  tall: false },
@@ -382,12 +388,14 @@ function buildPhotos() {
 }
 
 /* ── LIGHTBOX ────────────────────────────────────────────────────── */
+/* Afbeeldingen vergroten in een modaal venster met navigatie */
 const lb     = document.getElementById('lightbox');
 const lbImg  = lb?.querySelector('.lb-img');
 const lbCap  = lb?.querySelector('.lb-cap');
 const lbInfo = lb?.querySelector('.lb-info');
 let lbAll = [], lbIdx = 0;
 
+/* Lijst met alle lightbox-afbeeldingen verversen */
 function refreshLb() {
   const els = document.querySelectorAll('[data-lightbox]');
   lbAll = Array.from(els).map(el => {
@@ -402,6 +410,7 @@ function refreshLb() {
   return lbAll;
 }
 
+/* Lightbox initialiseren en klik-events toevoegen */
 function initLb() {
   const els = document.querySelectorAll('[data-lightbox]');
   refreshLb();
@@ -413,7 +422,7 @@ function initLb() {
     });
   });
 
-  /* Also make entire archive-item clickable (click on non-button area) */
+  /* Archief-items ook aanklikbaar maken */
   document.querySelectorAll('.archive-item').forEach(item => {
     item.addEventListener('click', e => {
       if (e.target.closest('.archive-page-btn')) return; // skip page nav buttons
@@ -466,7 +475,7 @@ if (lb) {
   });
 }
 
-/* ── CONTACTFORMULIER — Formspree integratie ────────────────────────── */
+/* ── CONTACTFORMULIER · Formspree integratie ────────────────────────── */
 const form   = document.getElementById('contact-form');
 const fstatus = document.getElementById('form-status');
 if (form && fstatus) {
@@ -480,7 +489,7 @@ if (form && fstatus) {
   form.addEventListener('submit', async e => {
     e.preventDefault();
 
-    // Honeypot — blokkeer bots die verborgen veld invullen
+    // Honeypot · blokkeer bots die verborgen veld invullen
     const honeypot = form.querySelector('[name="website"]');
     if (honeypot && honeypot.value.trim() !== '') return;
 
@@ -517,7 +526,7 @@ if (form && fstatus) {
       });
 
       if (response.ok) {
-        // succes — redirect naar bedankpagina
+        // succes · redirect naar bedankpagina
         window.location.href = 'thank-you.html';
       } else {
         throw new Error('Formspree error');

@@ -1,5 +1,5 @@
 /* ================================================================
-   Afonso Matos da Cruz — Portfolio
+   Afonso Matos da Cruz · Portfolio
    Art Direction: Swiss Editorial / Architectural Minimalism
    ================================================================ */
 
@@ -36,7 +36,7 @@ input, textarea {
    ACCESSIBILITY
    ================================================================ */
 
-/* Skip navigation link — WCAG 2.4.1 */
+/* Skip navigation link: WCAG 2.4.1 */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -54,7 +54,7 @@ input, textarea {
 }
 .skip-link:focus { top: 1rem; outline: 2px solid #fff; outline-offset: 2px; }
 
-/* Global focus style — visible keyboard navigation */
+/* Global focus style: visible keyboard navigation */
 :focus-visible {
   outline: 2px solid #C41E3A;
   outline-offset: 3px;
@@ -488,7 +488,7 @@ body.is-ready .hero-meta-bar { opacity: 1; transition-delay: 0.4s; }
   color: var(--slate);
 }
 
-/* Name block — full-width typographic statement */
+/* Name block: full-width typographic statement */
 .hero-name-block {
   position: relative;
   width: var(--wrap);
@@ -601,11 +601,11 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
   transform: translateY(0);
 }
 
-/* Hero year stamp — removed (was causing display issues) */
+/* Hero year stamp: removed (was causing display issues) */
 .hero-year-stamp { display: none; }
 
 /* ================================================================
-   SELECTED WORK — EXHIBITION LAYOUT
+   SELECTED WORK: EXHIBITION LAYOUT
    ================================================================ */
 #werk { padding: 0; }
 
@@ -764,14 +764,20 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
 .interstitial {
   overflow: hidden;
   position: relative;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/* Image spans full width maintaining natural aspect ratio */
+/* Elegant contained image with refined aspect ratio */
 .interstitial img {
   width: 100%;
   height: auto;
+  max-height: 60vh;
+  object-fit: cover;
   display: block;
-  filter: grayscale(15%) brightness(0.7);
+  filter: grayscale(12%) brightness(0.75);
+  border-radius: 0.125rem;
 }
 
 .interstitial-overlay {
@@ -779,19 +785,19 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(10, 10, 12, 0.72) 0%,
-    rgba(10, 10, 12, 0.2) 55%,
+    rgba(10, 10, 12, 0.65) 0%,
+    rgba(10, 10, 12, 0.15) 50%,
     transparent 100%
   );
   display: flex;
   align-items: flex-end;
-  padding: 4rem;
+  padding: 2.5rem;
 }
 
 .interstitial-statement {
   font-family: var(--disp);
   font-weight: 900;
-  font-size: clamp(2rem, 5.5vw, 5.5rem);
+  font-size: clamp(1.5rem, 4vw, 4rem);
   letter-spacing: -0.045em;
   line-height: 1;
   color: var(--white);
@@ -799,12 +805,34 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
 }
 
 .interstitial-statement em {
-  color: rgba(245, 245, 243, 0.28);
+  color: var(--crimson);
   font-style: italic;
 }
 
+/* Responsive adjustments for interstitial */
+@media (max-width: 768px) {
+  .interstitial {
+    padding: 0 1rem;
+  }
+  .interstitial img {
+    max-height: 50vh;
+  }
+  .interstitial-overlay {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .interstitial img {
+    max-height: 40vh;
+  }
+  .interstitial-overlay {
+    padding: 1rem;
+  }
+}
+
 /* ================================================================
-   ABOUT — EDITORIAL LAYOUT
+   ABOUT: EDITORIAL LAYOUT
    ================================================================ */
 #over { padding: 10rem 0; border-bottom: var(--line); }
 
@@ -1086,7 +1114,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
 }
 
 /* ================================================================
-   ARCHIVE — UNIFORM GRID
+   ARCHIVE: UNIFORM GRID
    ================================================================ */
 #archief { padding: 10rem 0; border-bottom: var(--line); }
 
@@ -1180,7 +1208,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
   transform: scale(1.08);
 }
 
-/* Archive info overlay — clean hover state */
+/* Archive info overlay: clean hover state */
 .archive-info-overlay {
   position: absolute;
   inset: 0;
@@ -1228,7 +1256,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
   text-align: center;
 }
 
-/* Multi-page works: page toggle overlay — prev/next at sides, ABOVE info overlay */
+/* Multi-page works: page toggle overlay: prev/next at sides, ABOVE info overlay */
 .archive-pages {
   position: absolute;
   inset: 0;
@@ -1333,7 +1361,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
 }
 .archive-item:hover .archive-zoom-hint { opacity: 1; }
 
-/* Archive item border glow on hover — see main .archive-item selector above */
+/* Archive item border glow on hover: see main .archive-item selector above */
 
 /* ================================================================
    BEELD & BEWEGING (Photo & Film)
@@ -1372,7 +1400,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
   margin-bottom: 1.5rem;
 }
 
-/* Film section — YouTube embed */
+/* Film section: YouTube embed */
 .film-section {
   margin-top: 2.5rem;
   border: var(--line);
@@ -1426,7 +1454,7 @@ body.is-ready .hero-descriptor { opacity: 1; transition-delay: 0.45s; }
 }
 .film-note a { color: var(--crimson); }
 
-/* Photo mosaic — clean grid with consistent sizing */
+/* Photo mosaic: clean grid with consistent sizing */
 .photo-mosaic {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2397,8 +2425,8 @@ footer {
   .hero-bottom-bar { opacity: 1; }
 }
 
-/* Crimson text highlight utility class */
-.crimson-text {
+/* Highlight text utility class */
+.highlight-text {
   color: var(--crimson);
   font-weight: 700;
 }

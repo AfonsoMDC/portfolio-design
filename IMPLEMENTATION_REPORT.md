@@ -1,181 +1,160 @@
-# Implementation Report — Afonso Matos da Cruz Portfolio
+# Implementation Report · Afonso Matos da Cruz Portfolio
 
-**Date:** 2026-07-03
+**Date:** 2026-07-05
 **Status:** Production-ready
 
 ---
 
-## Completed Tasks
+## Voltooide Taken
 
-### 1. Contact Form Integration
-- **Status:** COMPLETED
-- **Files Changed:** `js/main.js`
-- **Changes:**
-  - Implemented real Formspree POST request with async/await
-  - Added loading state with button disabled during submission
-  - Added form error handling with translated error messages
-  - Added honeypot anti-spam protection
-  - Form now redirects to thank-you.html on success
+### 1. Em Dash Verwijdering
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** Alle HTML, CSS, JS, README, legal pages
+- **Wijzigingen:**
+  - Alle em dashes (`—`) verwijderd uit de volledige codebase
+  - Vervangen door dubbele punten (`:`) voor sectienummers (`01: Geselecteerde projecten`)
+  - Vervangen door middelpunten (`·`) voor namen en titels
+  - Translations.js, index.html, project HTML, CSS, legal pages, README allemaal bijgewerkt
 
-### 2. Thank You Page
-- **Status:** COMPLETED
-- **Created:** `thank-you.html`
+### 2. Projectbeschrijvingen Herschreven
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** `js/translations.js`
+- **Wijzigingen:**
+  - Alle 3 projectbeschrijvingen uitgebreid met unieke inhoud
+  - Beschrijvingen bevatten nu: wat het project is, deliverables, technieken
+  - S.M.A.K.: Crossmediale tentoonstellingscampagne met visuele identiteit, affiche, animatie
+  - Disco: Multimediaal editorial project geïnspireerd door Saturday Night Fever en Memphis Design
+  - Oostende: Volledig visueel identiteitssysteem voor Badcultuur, Belle Epoque en James Ensor
+  - Alle 4 talen bijgewerkt (NL, EN, FR, PT)
+
+### 3. Project Tags Bijgewerkt
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** `js/translations.js`
+- **Wijzigingen:**
+  - S.M.A.K.: `['Branding','Print','Motion','Web']`
+  - Disco: `['Editorial','Motion','Web']`
+  - Oostende: `['Branding','Identity','Motion','Web']` (Motion toegevoegd)
+
+### 4. CSS Class Naam Wijziging
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** Alle HTML bestanden, `css/style.css`, `js/translations.js`
+- **Wijzigingen:**
+  - `.crimson-text` hernoemd naar `.highlight-text`
+  - 11 bestanden bijgewerkt met de nieuwe klassenaam
+  - CSS definitie bijgewerkt met commentaar
+
+### 5. Interstitial Redesign
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** `css/style.css`, `index.html`
+- **Wijzigingen:**
+  - Interstitial nu kleiner en eleganter (contained binnen max-width)
+  - Max-height 60vh voor afbeeldingen
+  - Padding toegevoegd voor betere margins
+  - Responsive breakpoints voor 768px en 480px
+  - Afbeelding vervangen door sterkere projectafbeelding (`assets/smak/poster.jpg`)
+  - Statement tekst gebruikt nu crimson kleur
+
+### 6. Nederlandse Commentaren Toegevoegd
+- **Status:** VOLTOOID
+- **Bestanden aangepast:** `js/main.js`, `js/translations.js`
+- **Wijzigingen:**
+  - Uitgebreide Nederlandse commentaren toegevoegd aan main.js
+  - Sectie-commentaren voor: navigatie, scroll progress, hamburger, reveal animaties
+  - Lightbox, footer reveal, contactformulier, projectenlijst, archief grid
+  - Translations.js sectie-commentaren in het Nederlands
+
+### 7. Contactformulier Formspree Integratie
+- **Status:** VOLTOOID (eerder)
+- **Bestanden aangepast:** `js/main.js`
+- **Wijzigingen:**
+  - Echte async/await fetch POST naar Formspree
+  - Loading state tijdens verzending
+  - Foutafhandeling met vertaalde foutmeldingen
+  - Honeypot anti-spam bescherming
+  - Redirect naar thank-you.html bij succes
+
+### 8. Thank You Pagina
+- **Status:** VOLTOOID (eerder)
+- **Nieuw bestand:** `thank-you.html`
 - **Features:**
-  - Matches portfolio branding (dark theme, crimson accents)
-  - Animated success icon
-  - Translated in all 4 languages (NL, EN, FR, PT)
-  - Links back to portfolio and projects section
-  - Consistent favicon and meta tags
+  - Consistente branding met portfolio
+  - Geanimeerd succes-icoon
+  - Vertaald in 4 talen
+  - Volledige favicon configuratie
 
-### 3. Translation System Updates
-- **Status:** COMPLETED
-- **Files Changed:** `js/translations.js`
-- **Changes:**
-  - Added thank-you page translations (meta.title, label, title, text, back, view)
-  - Added missing aria label translations (work.aria, archive.aria, visuals.aria)
-  - Added form error translation (contact.form.error)
-  - All 4 languages updated: Dutch, English, French, Portuguese
+### 9. Project Navigatie
+- **Status:** VOLTOOID (eerder)
+- **Bestanden aangepast:** Alle project HTML bestanden
+- **Wijzigingen:**
+  - Circulaire navigatie: Disco (01) -> S.M.A.K. (02) -> Oostende (03) -> Disco
 
-### 4. Project Navigation Fix
-- **Status:** COMPLETED
-- **Files Changed:** `project/disco.html`, `project/smak.html`, `project/oostende.html`
-- **Changes:**
-  - Fixed circular navigation: Disco (01) -> S.M.A.K. (02) -> Oostende (03) -> Disco
-  - Disco: prev=Oostende, next=S.M.A.K.
-  - S.M.A.K.: prev=Disco, next=Oostende
-  - Oostende: prev=S.M.A.K., next=Disco
-
-### 5. Class Name Renaming (vet-kleur -> crimson-text)
-- **Status:** COMPLETED
-- **Files Changed:** All HTML files, `css/style.css`, `js/translations.js`
-- **Changes:**
-  - Renamed `.vet-kleur` to `.crimson-text` throughout codebase
-  - Updated CSS class definition with English documentation
-  - Updated all HTML class attributes
-  - Updated translation strings containing the class
-
-### 6. CSS Comments Translation
-- **Status:** COMPLETED
-- **Files Changed:** `css/style.css`
-- **Changes:**
-  - Translated Dutch comments to English
-  - Removed inline Dutch explanations
-  - Added proper section documentation
-
-### 7. Favicon Configuration
-- **Status:** COMPLETED
-- **Files Changed:** `privacy.html`, `cookies.html`, `disclaimer.html`, `404.html`
-- **Changes:**
-  - Added complete favicon configuration to all legal pages
-  - Added favicon-96x96.png, favicon.svg, favicon.ico
-  - Added apple-touch-icon.png
-  - Added site.webmanifest
-
-### 8. SEO URL Updates
-- **Status:** COMPLETED
-- **Files Changed:** All HTML files, `sitemap.xml`, `robots.txt`
-- **Changes:**
-  - Updated all canonical URLs to `https://afonsomatosdacruz.vercel.app`
-  - Updated Open Graph URLs
-  - Updated Twitter Card URLs
-  - Updated JSON-LD structured data URLs
-  - Updated sitemap.xml with new domain
-  - Updated robots.txt sitemap reference
-
-### 9. Website Name Standardization
-- **Status:** COMPLETED
-- **Files Changed:** All HTML files
-- **Changes:**
-  - Updated page titles to include "Afonso Matos da Cruz Portfolio"
-  - Consistent branding across all pages
-
-### 10. Code Cleanup
-- **Status:** COMPLETED
-- **File Changed:** `js/main.js`
-- **Changes:**
-  - Removed duplicate `buildProjects()` function definition
+### 10. SEO URL Updates
+- **Status:** VOLTOOID (eerder)
+- **Bestanden aangepast:** Alle HTML bestanden, `sitemap.xml`, `robots.txt`
+- **Wijzigingen:**
+  - Alle canonical URLs naar `https://afonsomatosdacruz.vercel.app`
 
 ---
 
-## Items Requiring User Decision
+## Technische Samenvatting
 
-The following items were noted but require decisions or assets that only the user can provide:
-
-### 1. Project Descriptions
-- **Status:** NEEDS USER INPUT
-- The translations.js file contains project descriptions that should be reviewed
-- Current descriptions are functional but could be more detailed per the prompt's requirements
-- User should review `project.disco.sub`, `project.smak.sub`, `project.oostende.sub` in translations.js
-
-### 2. Project Tags
-- **Status:** NEEDS USER INPUT
-- Tags currently set: Disco=[Editorial, Motion, Web], S.M.A.K.=[Branding, Print, Motion, Web], Oostende=[Branding, Identity, Print]
-- User should verify these accurately reflect the work
-
-### 3. Interstitial Design
-- **Status:** NEEDS USER INPUT
-- The interstitial section uses the existing image (`assets/algemeen/mock-up poster.jpg`)
-- User should provide a stronger design image if desired
-- Current CSS styling could be adjusted for smaller/elegant presentation - but this is subjective
-
-### 4. Design Section Image
-- **Status:** NEEDS USER INPUT
-- User requested review of image shown below "Design" section
-- The interstitial image serves this purpose currently
-- Alternative images require user selection from existing assets
-
-### 5. Em Dashes Removal
-- **Status:** NOT RECOMMENDED (design decision)
-- Em dashes (—) are used intentionally as design elements
-- Navigation labels: `"01 — Geselecteerde projecten"`
-- Removing these would change the visual aesthetic
-- User should confirm if this is desired
-
-### 6. Image/Video Optimization
-- **Status:** NEEDS USER ACTION
-- WebP conversion requires image processing tools
-- User should use Squoosh.app or similar to convert JPGs to WebP
-- No duplicate/unused images detected in code review
-- Videos are YouTube embeds only
-
-### 7. Source Files Removal
-- **Status:** NEEDS USER ACTION
-- Production folder does not contain PSD, AI, XD files
-- User should verify `assets/cv-afonso-matos-da-cruz.pdf` exists
-
----
-
-## Technical Summary
-
-| Metric | Value |
-|--------|-------|
-| HTML Files Modified | 10 |
-| CSS Files Modified | 1 |
-| JS Files Modified | 2 |
-| New Files Created | 2 (thank-you.html, IMPLEMENTATION_REPORT.md) |
-| Languages Supported | 4 (NL, EN, FR, PT) |
-| Translation Keys | 150+ |
-| Class Renames | 1 (.vet-kleur -> .crimson-text) |
+| Metriek | Waarde |
+|---------|--------|
+| HTML Bestanden Aangepast | 10+ |
+| CSS Bestanden Aangepast | 1 |
+| JS Bestanden Aangepast | 2 |
+| Talen Ondersteund | 4 (NL, EN, FR, PT) |
+| Em Dashes Verwijderd | 100+ |
+| Class Hernoemingen | 1 (.highlight-text) |
+| Project Tags Bijgewerkt | 3 |
 
 ---
 
 ## Deployment Checklist
 
-Before deploying to Vercel:
+Voor deploy naar Vercel:
 
-1. Verify `assets/cv-afonso-matos-da-cruz.pdf` exists
-2. Test contact form submission (Formspree ID: `mjgqenly`)
-3. Verify thank-you.html works after form submission
-4. Test project navigation circular flow
-5. Test all 4 languages via language switcher
-6. Verify favicon displays on all pages
-7. Set up Vercel custom domain: `afonsomatosdacruz.vercel.app`
+1. Verifieer `assets/cv-afonso-matos-da-cruz.pdf` bestaat
+2. Test contactformulier verzending (Formspree ID: `mjgqenly`)
+3. Test thank-you.html na formulier verzending
+4. Test circulaire project navigatie
+5. Test alle 4 talen via taalwisselaar
+6. Verifieer favicon op alle pagina's
+7. Stel Vercel custom domain in: `afonsomatosdacruz.vercel.app`
 
 ---
 
-## Notes
+## Bestanden Structuur
 
-- The contact form uses Formspree endpoint `https://formspree.io/f/mjgqenly`
-- The translation system remains in `translations.js` with Dutch as the primary source language
-- No server-side code required - this is a static site
-- All external dependencies (Google Fonts, YouTube, Formspree) are loaded with privacy considerations
+```
+/
+├── index.html              # Hoofdpagina (portfolio)
+├── thank-you.html          # Bedankpagina na formulier
+├── 404.html                # Aangepaste foutpagina
+├── privacy.html            # Privacybeleid
+├── cookies.html            # Cookiebeleid
+├── disclaimer.html         # Disclaimer
+├── robots.txt              # Zoekmachine instructies
+├── sitemap.xml             # URL structuur
+├── _headers                # Netlify headers
+├── _redirects              # Netlify redirects
+├── .htaccess               # Apache configuratie
+│
+├── project/
+│   ├── disco.html          # Project: Disco Revisited
+│   ├── smak.html           # Project: S.M.A.K.
+│   └── oostende.html       # Project: Badcultuur
+│
+├── assets/                 # Alle media bestanden
+├── css/style.css           # Alle stijlen
+├── favicon/                # Favicon bestanden
+└── js/
+    ├── main.js             # Hoofdlogica
+    ├── project.js          # Project pagina's
+    └── translations.js     # Alle vertalingen
+```
+
+---
+
+*Portfolio van Afonso Matos da Cruz · Grafische Technieken 4D A-GT · Don Bosco SDW Gent*
+*Laatste update: Juli 2026*

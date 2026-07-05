@@ -1,8 +1,8 @@
-/* Afonso Matos da Cruz — i18n Translations (NL / EN / FR / PT) */
+/* Afonso Matos da Cruz · i18n Vertalingen (NL / EN / FR / PT) */
 const TRANSLATIONS = {
-  /* ───────────────────────── DUTCH (default) ───────────────────────── */
+  /* ───────────────────────── NEDERLANDS (standaard) ───────────────────────── */
   nl: {
-    /* Navigation */
+    /* Navigatie */
     'nav.work': 'Projecten',
     'nav.about': 'Over',
     'nav.archive': 'Werken',
@@ -11,7 +11,7 @@ const TRANSLATIONS = {
     'nav.menu': 'Menu openen',
     'nav.close': 'Menu sluiten',
 
-    /* Hero */
+    /* Hero sectie */
     'hero.available': 'Beschikbaar voor studentenjob & freelance',
     'hero.location': 'Gent, België',
     'hero.discipline': 'Discipline',
@@ -20,32 +20,32 @@ const TRANSLATIONS = {
     'hero.editorial': 'Editorial & Typografie',
     'hero.loc': 'Locatie',
     'hero.disciplines': ['Editorial Design','Typografie','Branding','Visual Identity','Art Direction','Motion Design'],
-    'meta.title': 'Afonso Matos da Cruz — Grafisch Ontwerper · Gent',
+    'meta.title': 'Afonso Matos da Cruz · Grafisch Ontwerper · Gent',
 
     /* Selected Work */
-    'work.label': '01 — Geselecteerde projecten',
+    'work.label': '01: Geselecteerde projecten',
     'work.title': 'Projecten',
     'work.count': '03',
     'work.view': 'BEKIJK',
 
     /* Projects (dynamic in JS) */
     'project.smak.title': 'Beeld, Twijfel<br>& Constructie',
-    'project.smak.sub': 'Crossmediale tentoonstellingscampagne voor S.M.A.K. Gent.',
+    'project.smak.sub': 'Crossmediale tentoonstellingscampagne voor S.M.A.K. Gent. Visuele identiteit, affiche, uitnodigingen, animatie, pixelbeelden en website voor de tentoonstelling van Marc De Blieck. Onderzoekt de spanning tussen fotografie en constructie.',
     'project.smak.cats': ['Branding','Print','Motion','Web'],
     'project.disco.title': 'Disco Revisited',
-    'project.disco.sub': 'Multimediaal designproject, sfeerfilm en website gebaseerd op de discoscene en Memphis Design.',
+    'project.disco.sub': 'Multimediaal editorial project geïnspireerd door Saturday Night Fever (1977) en Memphis Design. Inclusief moodboards, editorial spread, sfeerfilm en twee responsive websites. Van dansvloer naar designbureau.',
     'project.disco.cats': ['Editorial','Motion','Web'],
     'project.oostende.title': 'Oostende',
-    'project.oostende.sub': 'Volledig visueel identiteitssysteem — Badcultuur aan Zee. Styleguide, spread, animatie, website.',
-    'project.oostende.cats': ['Branding','Identity','Print'],
+    'project.oostende.sub': 'Volledig visueel identiteitssysteem voor Badcultuur Oostende. Belle Epoque, James Ensor en kust-erfgoed vertaald naar een moderne beeldtaal. Styleguide, spread, karakteranimatie en twee websites.',
+    'project.oostende.cats': ['Branding','Identity','Motion','Web'],
 
     /* Interstitial */
-    'interstitial.statement': 'Design dat iets<br><strong class="crimson-text">zegt.</strong>',
+    'interstitial.statement': 'Design dat iets<br><strong class="highlight-text">zegt.</strong>',
 
     /* About */
-    'about.label': '02 — Over mij',
+    'about.label': '02: Over mij',
 
-'about.manifesto': 'Ontwerp dat<br><strong class="crimson-text">betekenis draagt.</strong>',
+'about.manifesto': 'Ontwerp dat<br><strong class="highlight-text">betekenis draagt.</strong>',
 
 'about.p1': 'Ik ben Afonso Matos da Cruz, een grafisch ontwerper met een passie voor het creëren van sterke visuele identiteiten, digitale ervaringen en doordachte ontwerpen waarin esthetiek en functionaliteit samenkomen.',
 
@@ -79,20 +79,20 @@ const TRANSLATIONS = {
 
 'about.pillars.title': 'Design filosofie',
 
-'about.pillar1.num': '01 — Concept',
+'about.pillar1.num': '01: Concept',
 'about.pillar1.title': 'Concept boven esthetiek',
 'about.pillar1.text': 'Elk ontwerp begint met een idee. Esthetiek ondersteunt het concept, nooit andersom.',
 
-'about.pillar2.num': '02 — Typografie',
+'about.pillar2.num': '02: Typografie',
 'about.pillar2.title': 'Type als structuur',
 'about.pillar2.text': 'Typografie, witruimte en hiërarchie vormen de basis van elke visuele communicatie.',
 
-'about.pillar3.num': '03 — Precisie',
+'about.pillar3.num': '03: Precisie',
 'about.pillar3.title': 'Minder, maar beter',
 'about.pillar3.text': 'Elke keuze heeft een doel. Witruimte en eenvoud versterken de boodschap, niet het gebrek eraan.',
 
   /* Archive */
-    'archive.label': '03 — Losse werken',
+    'archive.label': '03: Losse werken',
     'archive.title': 'Overige Werken',
     'archive.count': '13',
     'archive.intro': 'Een selectie van opzichzelfstaande ontwerpen en visuele studies. Hoewel deze werken geen deel uitmaken van een groter, overkoepelend project, zijn ze met exact dezelfde precisie, methodiek en oog voor detail gerealiseerd. Het zijn volledig afgewerkte, volwaardige designs waarin de essentie van mijn stijl in een compacte vorm samenkomt.',
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
       { name: 'Verbondenheid', type: 'Conceptuele Poster', desc: 'Conceptuele poster over menselijke verbinding. Minimalisme met diepe lading.' },
       { name: 'Silent Spring', type: 'Grafische Compositie', desc: 'Visuele compositie geïnspireerd op Rachel Carson. Layering en textuur als boodschap.' },
       { name: 'Waveform Ticket', type: 'Drukwerk', desc: 'Concertticket design met golfvormpatroon. Oefening in repetitie en ritme.' },
-      { name: 'Visitekaartje', type: 'Drukwerk · Kaart', desc: 'Dubbelzijdig visitekaartje — voorkant met logo, achterkant met contactgegevens.', pages: 2 },
+      { name: 'Visitekaartje', type: 'Drukwerk · Kaart', desc: 'Dubbelzijdig visitekaartje: voorkant met logo, achterkant met contactgegevens.', pages: 2 },
       { name: 'Personal Branding', type: 'Logo · Identiteit', desc: 'Eigen logo en visuele identiteit. Monogram en typografisch systeem.' },
       { name: 'Marcel Broodthaers', type: 'Spread', desc: 'Editorial spread geïnspireerd op het werk van Marcel Broodthaers. Focus op typografie en lay-out.', pages: 3 },
       { name: 'Harry Bertoia', type: 'Spread', desc: 'Editorial spread met focus op ontwerper Harry Bertoia. Evenwicht in lay-out en vormgeving.', pages: 2 },
@@ -118,9 +118,9 @@ const TRANSLATIONS = {
     'archive.next': 'Volgende ›',
 
     /* Foto & Film */
-    'visuals.label': '04 — Foto & Film',
+    'visuals.label': '04: Foto & Film',
     'visuals.title': 'Beeldtaal <br>in beweging',
-    'visuals.heading': 'Straat.<br>Architectuur.<br><strong class="crimson-text">Het moment.</strong>',
+    'visuals.heading': 'Straat.<br>Architectuur.<br><strong class="highlight-text">Het moment.</strong>',
     'visuals.text': 'Mijn passie voor visuele communicatie zet ik naast grafisch ontwerp ook in via fotografie en film. In mijn werk zoek ik bewust naar de spanning tussen licht, compositie en het ongrijpbare, vluchtige moment. Elk shot is een poging om een alledaagse scène of omgeving te vertalen naar een krachtig, sprekend beeld.',
     'visuals.film.tag': 'Kortfilm',
     'visuals.film.name': 'NUL WEERGAVEN',
@@ -150,7 +150,7 @@ const TRANSLATIONS = {
     'contact.form.privacy.link': 'privacybeleid',
     'contact.form.submit': 'Bericht versturen',
     'contact.form.sending': 'Verzenden…',
-    'contact.form.success': '✓ Bericht ontvangen — ik neem zo snel mogelijk contact op.',
+    'contact.form.success': '✓ Bericht ontvangen. Ik neem zo snel mogelijk contact op.',
 
     /* Footer */
     'footer.eyebrow': 'Laten we samenwerken',
@@ -184,7 +184,7 @@ const TRANSLATIONS = {
     'mob.copy': 'AMC',
 
     /* Thank You Page */
-    'thankyou.meta.title': 'Bericht verzonden — Afonso Matos da Cruz Portfolio',
+    'thankyou.meta.title': 'Bericht verzonden · Afonso Matos da Cruz Portfolio',
     'thankyou.label': 'Bericht verzonden',
     'thankyou.title': 'Bedankt voor<br>je <em>bericht.</em>',
     'thankyou.text': 'Ik heb je bericht ontvangen en neem zo snel mogelijk contact met je op. Meestal reageer ik binnen 24 tot 48 uur.',
@@ -200,7 +200,7 @@ const TRANSLATIONS = {
     'contact.form.error': 'Er ging iets mis. Probeer opnieuw.',
   },
 
-  /* ───────────────────────── ENGLISH ───────────────────────── */
+  /* ───────────────────────── ENGELS ───────────────────────── */
   en: {
     'nav.work': 'Work',
     'nav.about': 'About',
@@ -218,28 +218,28 @@ const TRANSLATIONS = {
     'hero.editorial': 'Editorial & Typography',
     'hero.loc': 'Location',
     'hero.disciplines': ['Editorial Design','Typography','Branding','Visual Identity','Art Direction','Motion Design'],
-    'meta.title': 'Afonso Matos da Cruz — Graphic Designer · Ghent',
+    'meta.title': 'Afonso Matos da Cruz · Graphic Designer · Ghent',
 
-    'work.label': '01 — Selected work',
+    'work.label': '01: Selected work',
     'work.title': 'Projects',
     'work.count': '03',
     'work.view': 'VIEW',
 
     'project.smak.title': 'Image, Doubt<br>& Construction',
-    'project.smak.sub': 'Exhibition design for S.M.A.K. Ghent — Cultural identity system for Marc De Blieck.',
+    'project.smak.sub': 'Crossmediaal exhibition campaign for S.M.A.K. Ghent. Visual identity, poster, invitations, animation, pixel images and website for the Marc De Blieck exhibition. Explores the tension between photography and construction.',
     'project.smak.cats': ['Branding','Print','Motion','Web'],
-    'project.disco.title': 'Project Disco',
-    'project.disco.sub': 'Multimedia editorial, atmosphere film and website based on the disco scene and Memphis Design.',
+    'project.disco.title': 'Disco Revisited',
+    'project.disco.sub': 'Multimedia editorial project inspired by Saturday Night Fever (1977) and Memphis Design. Including moodboards, editorial spread, atmosphere film and two responsive websites. From dancefloor to design studio.',
     'project.disco.cats': ['Editorial','Motion','Web'],
-    'project.oostende.title': 'Project Ostend',
-    'project.oostende.sub': 'Complete visual identity system — Beach culture by the sea. Styleguide, spread, animation, website.',
-    'project.oostende.cats': ['Branding','Identity','Print'],
+    'project.oostende.title': 'Ostend',
+    'project.oostende.sub': 'Complete visual identity system for Beach Culture Ostend. Belle Epoque, James Ensor and coastal heritage translated into a modern visual language. Styleguide, spread, character animation and two websites.',
+    'project.oostende.cats': ['Branding','Identity','Motion','Web'],
 
     'interstitial.statement': 'Design that says<br><em>something.</em>',
 
-    'about.label': '02 — About me',
+    'about.label': '02: About me',
     'about.manifesto': 'Design that says<br><em>something.</em>',
-    'about.p1': 'I am Afonso Matos da Cruz — a graphic designer from Ghent with a keen eye for typography, editorial design and visual identity. Every design has something to say, and the way it says it is at least as important as the message itself.',
+    'about.p1': 'I am Afonso Matos da Cruz, a graphic designer from Ghent with a keen eye for typography, editorial design and visual identity. Every design has something to say, and the way it says it is at least as important as the message itself.',
     'about.p2': 'Currently studying Graphic Techniques (4D A-GT) at Don Bosco Sint-Denijs-Westrem. Alongside school projects, I work on personal pieces and am building <strong>Rich Minds</strong>.',
     'about.education': 'Education',
     'about.education.val': 'Graphic Techniques (4D A-GT)<br>Don Bosco SDW, Ghent',
@@ -252,17 +252,17 @@ const TRANSLATIONS = {
     'about.cv': 'Download CV',
     'about.collab': 'Collaborate',
     'about.pillars.title': 'Design philosophy',
-    'about.pillar1.num': '01 — Concept',
+    'about.pillar1.num': '01: Concept',
     'about.pillar1.title': 'Concept over aesthetics',
     'about.pillar1.text': 'Design that is only beautiful is incomplete. Every visual decision deserves a reason.',
-    'about.pillar2.num': '02 — Typography',
+    'about.pillar2.num': '02: Typography',
     'about.pillar2.title': 'Type as architecture',
     'about.pillar2.text': 'Typeface, whitespace and hierarchy form the structure of every communication.',
-    'about.pillar3.num': '03 — Precision',
+    'about.pillar3.num': '03: Precision',
     'about.pillar3.title': 'Less is more precise',
     'about.pillar3.text': 'Fewer choices, sharper intentions. Whitespace is a design decision, not a shortage.',
 
-    'archive.label': '03 — Other works',
+    'archive.label': '03: Other works',
     'archive.title': 'Other Works',
     'archive.count': '07',
     'archive.intro': 'Experimental posters, personal projects and graphic works outside the major projects.',
@@ -272,7 +272,7 @@ const TRANSLATIONS = {
       { name: 'Waveform Ticket', type: 'Print', desc: 'Concert ticket design with waveform pattern. Exercise in repetition and rhythm.' },
       { name: 'English Breakfast', type: 'Illustrative Poster', desc: 'Illustrative poster with culinary theme. Color, composition and atmosphere.' },
       { name: 'Connection', type: 'Conceptual Poster', desc: 'Conceptual poster about human connection. Minimalism with deep meaning.' },
-      { name: 'Business Card', type: 'Print · Card', desc: 'Double-sided business card — front with logo, back with contact details.', pages: 2 },
+      { name: 'Business Card', type: 'Print · Card', desc: 'Double-sided business card: front with logo, back with contact details.', pages: 2 },
       { name: 'Personal Branding', type: 'Logo · Identity', desc: 'Own logo and visual identity. Monogram and typographic system.' },
     ],
     'archive.action.zoom': 'Click to enlarge',
@@ -281,10 +281,10 @@ const TRANSLATIONS = {
     'archive.prev': '‹ Previous',
     'archive.next': 'Next ›',
 
-    'visuals.label': '04 — Photo & Film',
+    'visuals.label': '04: Photo & Film',
     'visuals.title': 'Photo & Film',
     'visuals.heading': 'Street.<br>Architecture.<br><em>Moment.</em>',
-    'visuals.text': 'Besides graphic design, I photograph and film — street photography, architecture, portrait and short film. Searching for the tension between light, composition and the fleeting moment.',
+    'visuals.text': 'Besides graphic design, I photograph and film: street photography, architecture, portrait and short film. Searching for the tension between light, composition and the fleeting moment.',
     'visuals.film.tag': 'Short Film',
     'visuals.film.name': 'Visual Experiment 2025',
     'visuals.film.note': 'Watch on',
@@ -313,7 +313,7 @@ const TRANSLATIONS = {
     'contact.form.privacy.link': 'privacy policy',
     'contact.form.submit': 'Send message',
     'contact.form.sending': 'Sending…',
-    'contact.form.success': '✓ Message received — I will get back to you as soon as possible.',
+    'contact.form.success': '✓ Message received. I will get back to you as soon as possible.',
 
     'footer.eyebrow': 'Let\'s work together',
     'footer.line1': 'LET\'S',
@@ -344,7 +344,7 @@ const TRANSLATIONS = {
     'mob.copy': 'AMC',
 
     /* Thank You Page */
-    'thankyou.meta.title': 'Message Sent — Afonso Matos da Cruz Portfolio',
+    'thankyou.meta.title': 'Message Sent · Afonso Matos da Cruz Portfolio',
     'thankyou.label': 'Message sent',
     'thankyou.title': 'Thank you for<br>your <em>message.</em>',
     'thankyou.text': 'I have received your message and will get back to you as soon as possible. Usually within 24 to 48 hours.',
@@ -360,7 +360,7 @@ const TRANSLATIONS = {
     'contact.form.error': 'Something went wrong. Please try again.',
   },
 
-  /* ───────────────────────── FRENCH ───────────────────────── */
+  /* ───────────────────────── FRANS ───────────────────────── */
   fr: {
     'nav.work': 'Travail',
     'nav.about': 'À propos',
@@ -378,28 +378,28 @@ const TRANSLATIONS = {
     'hero.editorial': 'Éditorial & Typographie',
     'hero.loc': 'Localisation',
     'hero.disciplines': ['Design Éditorial','Typographie','Branding','Identité Visuelle','Direction Artistique','Motion Design'],
-    'meta.title': 'Afonso Matos da Cruz — Designer Graphique · Gand',
+    'meta.title': 'Afonso Matos da Cruz · Designer Graphique · Gand',
 
-    'work.label': '01 — Travail sélectionné',
+    'work.label': '01: Travail sélectionné',
     'work.title': 'Projets',
     'work.count': '03',
     'work.view': 'VOIR',
 
     'project.smak.title': 'Image, Doute<br>& Construction',
-    'project.smak.sub': 'Design d\'exposition pour S.M.A.K. Gand — Système d\'identité culturelle pour Marc De Blieck.',
+    'project.smak.sub': 'Campagne d\'exposition crossmediale pour S.M.A.K. Gand. Identité visuelle, affiche, invitations, animation, images pixel et site web pour l\'exposition Marc De Blieck. Explore la tension entre photographie et construction.',
     'project.smak.cats': ['Branding','Print','Motion','Web'],
-    'project.disco.title': 'Projet Disco',
-    'project.disco.sub': 'Éditorial multimédia, film d\'ambiance et site web basés sur la scène disco et le Memphis Design.',
+    'project.disco.title': 'Disco Revisited',
+    'project.disco.sub': 'Projet éditorial multimédia inspiré par Saturday Night Fever (1977) et le Memphis Design. Moodboards, spread éditorial, film d\'ambiance et deux sites web responsive. De la piste de danse au studio de design.',
     'project.disco.cats': ['Éditorial','Motion','Web'],
-    'project.oostende.title': 'Projet Ostende',
-    'project.oostende.sub': 'Système d\'identité visuelle complet — Culture balnéaire au bord de la mer. Styleguide, spread, animation, site web.',
-    'project.oostende.cats': ['Branding','Identité','Print'],
+    'project.oostende.title': 'Ostende',
+    'project.oostende.sub': 'Système d\'identité visuelle complet pour la Culture Balnéaire d\'Ostende. Belle Epoque, James Ensor et patrimoine côtier traduits en langage visuel moderne. Styleguide, spread, animation et deux sites web.',
+    'project.oostende.cats': ['Branding','Identité','Motion','Web'],
 
     'interstitial.statement': 'Un design qui dit<br><em>quelque chose.</em>',
 
-    'about.label': '02 — À propos de moi',
+    'about.label': '02: À propos de moi',
     'about.manifesto': 'Un design qui dit<br><em>quelque chose.</em>',
-    'about.p1': 'Je suis Afonso Matos da Cruz — designer graphique à Gand avec un œil aiguisé pour la typographie, le design éditorial et l\'identité visuelle. Chaque design a quelque chose à dire, et la façon dont il le dit est au moins aussi importante que le message lui-même.',
+    'about.p1': 'Je suis Afonso Matos da Cruz, designer graphique à Gand avec un œil aiguisé pour la typographie, le design éditorial et l\'identité visuelle. Chaque design a quelque chose à dire, et la façon dont il le dit est au moins aussi importante que le message lui-même.',
     'about.p2': 'Actuellement en formation Techniques Graphiques (4D A-GT) à Don Bosco Sint-Denijs-Westrem. À côté des projets scolaires, je travaille sur des œuvres personnelles et je développe <strong>Rich Minds</strong>.',
     'about.education': 'Formation',
     'about.education.val': 'Techniques Graphiques (4D A-GT)<br>Don Bosco SDW, Gand',
@@ -412,17 +412,17 @@ const TRANSLATIONS = {
     'about.cv': 'Télécharger CV',
     'about.collab': 'Collaborer',
     'about.pillars.title': 'Philosophie de design',
-    'about.pillar1.num': '01 — Concept',
+    'about.pillar1.num': '01: Concept',
     'about.pillar1.title': 'Le concept avant l\'esthétique',
     'about.pillar1.text': 'Un design qui est seulement beau est incomplet. Chaque décision visuelle mérite une raison.',
-    'about.pillar2.num': '02 — Typographie',
+    'about.pillar2.num': '02: Typographie',
     'about.pillar2.title': 'La typographie comme architecture',
     'about.pillar2.text': 'Police, espace blanc et hiérarchie forment la structure de chaque communication.',
-    'about.pillar3.num': '03 — Précision',
+    'about.pillar3.num': '03: Précision',
     'about.pillar3.title': 'Moins c\'est plus précis',
     'about.pillar3.text': 'Moins de choix, intentions plus affûtées. L\'espace blanc est une décision de design, pas un manque.',
 
-    'archive.label': '03 — Autres œuvres',
+    'archive.label': '03: Autres œuvres',
     'archive.title': 'Autres Œuvres',
     'archive.count': '07',
     'archive.intro': 'Affiches expérimentales, projets personnels et œuvres graphiques en dehors des grands projets.',
@@ -432,7 +432,7 @@ const TRANSLATIONS = {
       { name: 'Ticket Waveform', type: 'Impression', desc: 'Design de ticket de concert avec motif de forme d\'onde. Exercice de répétition et de rythme.' },
       { name: 'English Breakfast', type: 'Affiche Illustrative', desc: 'Affiche illustrative avec thème culinaire. Couleur, composition et atmosphère.' },
       { name: 'Connexion', type: 'Affiche Conceptuelle', desc: 'Affiche conceptuelle sur la connexion humaine. Minimalisme avec une signification profonde.' },
-      { name: 'Carte de Visite', type: 'Impression · Carte', desc: 'Carte de visite recto-verso — recto avec logo, verso avec coordonnées.', pages: 2 },
+      { name: 'Carte de Visite', type: 'Impression · Carte', desc: 'Carte de visite recto-verso: recto avec logo, verso avec coordonnées.', pages: 2 },
       { name: 'Branding Personnel', type: 'Logo · Identité', desc: 'Propre logo et identité visuelle. Monogramme et système typographique.' },
     ],
     'archive.action.zoom': 'Cliquez pour agrandir',
@@ -441,10 +441,10 @@ const TRANSLATIONS = {
     'archive.prev': '‹ Précédent',
     'archive.next': 'Suivant ›',
 
-    'visuals.label': '04 — Photo & Film',
+    'visuals.label': '04: Photo & Film',
     'visuals.title': 'Photo & Film',
     'visuals.heading': 'Rue.<br>Architecture.<br><em>Moment.</em>',
-    'visuals.text': 'En plus du design graphique, je photographie et filme — photographie de rue, architecture, portrait et court métrage. À la recherche de la tension entre lumière, composition et moment fugace.',
+    'visuals.text': 'En plus du design graphique, je photographie et filme: photographie de rue, architecture, portrait et court métrage. À la recherche de la tension entre lumière, composition et moment fugace.',
     'visuals.film.tag': 'Court Métrage',
     'visuals.film.name': 'Expérimentation Visuelle 2025',
     'visuals.film.note': 'Regarder sur',
@@ -473,7 +473,7 @@ const TRANSLATIONS = {
     'contact.form.privacy.link': 'politique de confidentialité',
     'contact.form.submit': 'Envoyer le message',
     'contact.form.sending': 'Envoi…',
-    'contact.form.success': '✓ Message reçu — je vous recontacte dès que possible.',
+    'contact.form.success': '✓ Message reçu. Je vous recontacte dès que possible.',
 
     'footer.eyebrow': 'Travaillons ensemble',
     'footer.line1': 'TRAVAILLONS',
@@ -504,7 +504,7 @@ const TRANSLATIONS = {
     'mob.copy': 'AMC',
 
     /* Thank You Page */
-    'thankyou.meta.title': 'Message envoyé — Afonso Matos da Cruz Portfolio',
+    'thankyou.meta.title': 'Message envoyé · Afonso Matos da Cruz Portfolio',
     'thankyou.label': 'Message envoyé',
     'thankyou.title': 'Merci pour<br>votre <em>message.</em>',
     'thankyou.text': 'J\'ai reçu votre message et vous recontacterai dès que possible. Habituellement sous 24 à 48 heures.',
@@ -520,7 +520,7 @@ const TRANSLATIONS = {
     'contact.form.error': 'Une erreur s\'est produite. Veuillez réessayer.',
   },
 
-  /* ───────────────────────── PORTUGUESE ───────────────────────── */
+  /* ───────────────────────── PORTUGEES ───────────────────────── */
   pt: {
     'nav.work': 'Trabalho',
     'nav.about': 'Sobre',
@@ -538,28 +538,28 @@ const TRANSLATIONS = {
     'hero.editorial': 'Editorial & Tipografia',
     'hero.loc': 'Localização',
     'hero.disciplines': ['Design Editorial','Tipografia','Branding','Identidade Visual','Direção de Arte','Motion Design'],
-    'meta.title': 'Afonso Matos da Cruz — Designer Gráfico · Gante',
+    'meta.title': 'Afonso Matos da Cruz · Designer Gráfico · Gante',
 
-    'work.label': '01 — Trabalho selecionado',
+    'work.label': '01: Trabalho selecionado',
     'work.title': 'Projetos',
     'work.count': '03',
     'work.view': 'VER',
 
     'project.smak.title': 'Imagem, Dúvida<br>& Construção',
-    'project.smak.sub': 'Design de exposição para S.M.A.K. Gante — Sistema de identidade cultural para Marc De Blieck.',
+    'project.smak.sub': 'Campanha de exposição crossmediaal para S.M.A.K. Gante. Identidade visual, cartaz, convites, animação, imagens pixel e site web para a exposição Marc De Blieck. Explora a tensão entre fotografia e construção.',
     'project.smak.cats': ['Branding','Print','Motion','Web'],
-    'project.disco.title': 'Projeto Disco',
-    'project.disco.sub': 'Editorial multimédia, filme de atmosfera e website baseados na cena disco e no Memphis Design.',
+    'project.disco.title': 'Disco Revisited',
+    'project.disco.sub': 'Projeto editorial multimédia inspirado por Saturday Night Fever (1977) e Memphis Design. Moodboards, spread editorial, filme de atmosfera e dois sites web responsivos. Da pista de dança ao estúdio de design.',
     'project.disco.cats': ['Editorial','Motion','Web'],
-    'project.oostende.title': 'Projeto Ostende',
-    'project.oostende.sub': 'Sistema de identidade visual completo — Cultura de praia à beira-mar. Styleguide, spread, animação, website.',
-    'project.oostende.cats': ['Branding','Identidade','Print'],
+    'project.oostende.title': 'Ostende',
+    'project.oostende.sub': 'Sistema de identidade visual completo para a Cultura de Praia em Ostende. Belle Epoque, James Ensor e património costeiro traduzidos em linguagem visual moderna. Styleguide, spread, animação e dois sites web.',
+    'project.oostende.cats': ['Branding','Identidade','Motion','Web'],
 
     'interstitial.statement': 'Design que diz<br><em>algo.</em>',
 
-    'about.label': '02 — Sobre mim',
+    'about.label': '02: Sobre mim',
     'about.manifesto': 'Design que diz<br><em>algo.</em>',
-    'about.p1': 'Sou Afonso Matos da Cruz — designer gráfico de Gante com um olhar atento para tipografia, design editorial e identidade visual. Cada design tem algo a dizer, e a forma como o diz é pelo menos tão importante quanto a mensagem em si.',
+    'about.p1': 'Sou Afonso Matos da Cruz, designer gráfico de Gante com um olhar atento para tipografia, design editorial e identidade visual. Cada design tem algo a dizer, e a forma como o diz é pelo menos tão importante quanto a mensagem em si.',
     'about.p2': 'Atualmente em formação em Técnicas Gráficas (4D A-GT) na Don Bosco Sint-Denijs-Westrem. Além dos projetos escolares, trabalho em peças pessoais e estou a construir a <strong>Rich Minds</strong>.',
     'about.education': 'Formação',
     'about.education.val': 'Técnicas Gráficas (4D A-GT)<br>Don Bosco SDW, Gante',
@@ -572,17 +572,17 @@ const TRANSLATIONS = {
     'about.cv': 'Descarregar CV',
     'about.collab': 'Colaborar',
     'about.pillars.title': 'Filosofia de design',
-    'about.pillar1.num': '01 — Conceito',
+    'about.pillar1.num': '01: Conceito',
     'about.pillar1.title': 'Conceito acima da estética',
     'about.pillar1.text': 'Design que é apenas bonito é incompleto. Cada decisão visual merece uma razão.',
-    'about.pillar2.num': '02 — Tipografia',
+    'about.pillar2.num': '02: Tipografia',
     'about.pillar2.title': 'Tipo como arquitetura',
     'about.pillar2.text': 'Tipo de letra, espaço em branco e hierarquia formam a estrutura de toda a comunicação.',
-    'about.pillar3.num': '03 — Precisão',
+    'about.pillar3.num': '03: Precisão',
     'about.pillar3.title': 'Menos é mais preciso',
     'about.pillar3.text': 'Menos escolhas, intenções mais afiadas. O espaço em branco é uma decisão de design, não uma falta.',
 
-    'archive.label': '03 — Outros Projetos',
+    'archive.label': '03: Outros Projetos',
     'archive.title': 'Outros Projetos',
     'archive.count': '07',
     'archive.intro': 'Cartazes experimentais, projetos pessoais e trabalhos gráficos fora dos grandes projetos.',
@@ -592,7 +592,7 @@ const TRANSLATIONS = {
       { name: 'Bilhete Waveform', type: 'Impressão', desc: 'Design de bilhete de concerto com padrão de forma de onda. Exercício de repetição e ritmo.' },
       { name: 'English Breakfast', type: 'Cartaz Ilustrativo', desc: 'Cartaz ilustrativo com tema culinário. Cor, composição e atmosfera.' },
       { name: 'Conexão', type: 'Cartaz Conceptual', desc: 'Cartaz conceptual sobre conexão humana. Minimalismo com significado profundo.' },
-      { name: 'Cartão de Visita', type: 'Impressão · Cartão', desc: 'Cartão de visita frente e verso — frente com logo, verso com contactos.', pages: 2 },
+      { name: 'Cartão de Visita', type: 'Impressão · Cartão', desc: 'Cartão de visita frente e verso: frente com logo, verso com contactos.', pages: 2 },
       { name: 'Branding Pessoal', type: 'Logo · Identidade', desc: 'Próprio logo e identidade visual. Monograma e sistema tipográfico.' },
     ],
     'archive.action.zoom': 'Clique para ampliar',
@@ -601,10 +601,10 @@ const TRANSLATIONS = {
     'archive.prev': '‹ Anterior',
     'archive.next': 'Próximo ›',
 
-    'visuals.label': '04 — Foto & Filme',
+    'visuals.label': '04: Foto & Filme',
     'visuals.title': 'Foto & Filme',
     'visuals.heading': 'Rua.<br>Arquitetura.<br><em>Momento.</em>',
-    'visuals.text': 'Além do design gráfico, fotografo e filme — fotografia de rua, arquitetura, retrato e curta-metragem. À procura da tensão entre luz, composição e o momento fugaz.',
+    'visuals.text': 'Além do design gráfico, fotografo e filme: fotografia de rua, arquitetura, retrato e curta-metragem. À procura da tensão entre luz, composição e o momento fugaz.',
     'visuals.film.tag': 'Curta-Metragem',
     'visuals.film.name': 'Experimento Visual 2025',
     'visuals.film.note': 'Ver no',
@@ -633,7 +633,7 @@ const TRANSLATIONS = {
     'contact.form.privacy.link': 'política de privacidade',
     'contact.form.submit': 'Enviar mensagem',
     'contact.form.sending': 'A enviar…',
-    'contact.form.success': '✓ Mensagem recebida — contacto-te o mais breve possível.',
+    'contact.form.success': '✓ Mensagem recebida. Contacto-te o mais breve possível.',
 
     'footer.eyebrow': 'Vamos criar juntos',
     'footer.line1': 'VAMOS',
@@ -664,7 +664,7 @@ const TRANSLATIONS = {
     'mob.copy': 'AMC',
 
     /* Thank You Page */
-    'thankyou.meta.title': 'Mensagem enviada — Afonso Matos da Cruz Portfolio',
+    'thankyou.meta.title': 'Mensagem enviada · Afonso Matos da Cruz Portfolio',
     'thankyou.label': 'Mensagem enviada',
     'thankyou.title': 'Obrigado pela<br>sua <em>mensagem.</em>',
     'thankyou.text': 'Recebi a sua mensagem e entrarei em contacto o mais breve possível. Normalmente dentro de 24 a 48 horas.',

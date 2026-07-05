@@ -1,4 +1,4 @@
-# Afonso Matos da Cruz — Portfolio Website
+# Afonso Matos da Cruz · Portfolio Website
 
 **Grafisch Ontwerper · Gent, België**
 Live: [afonsomatosdacruz.vercel.app](https://afonsomatosdacruz.vercel.app)

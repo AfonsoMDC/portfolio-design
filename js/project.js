@@ -1,4 +1,4 @@
-/* Afonso Matos da Cruz — project.js */
+/* Afonso Matos da Cruz · project.js */
 'use strict';
 
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
